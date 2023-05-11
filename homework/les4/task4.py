@@ -9,6 +9,13 @@
 
 def multiplication_chain(num):
     # Здесь нужно написать код
+    count_multy = 0
+    while num // 10:
+        lst_num = map(int, str(num))
+        num = 1
+        for i in lst_num:
+         num *= i
+        count_multy += 1
     return count_multy
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
